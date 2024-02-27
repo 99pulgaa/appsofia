@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<header>
+    <header class="header">
+        <h1 class="appsofia" type="button" onclick="window.location.href='../index.html';">APPSOFIA</h1>
+        <h2 class="acercade" type="button" onclick="window.location.href='../html/acercade.html';">Acerca de</h2>
+        <div class="logo" align="center"><img src="../img/icon.png" width="50" height="50" type="button" onclick="window.location.href='../index.html';">
+    </header>
+</header>
+<body>
+  <section class='bloque'>
+    <h4>REGISTRO</h4>
+    <input class="controls" type="email" name="email" id="email" placeholder="Email" required>
+    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+    <input class="controls" type="text" name="documento" id="documento" placeholder="Documento" required>
+    <input class="controls" type="password" name="pass" id="pass" placeholder="Contraseña" required>
+    <input class="controls" type="password" name="repetirpass" id="repetirpass" placeholder="Repetir contraseña" required>
+    <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+    <input class='botons' type="button" value="Registrate" onclick="validarRegistro()">
+    <p class="yatengo"><a href="../html/inicio.html">Ya tengo cuenta</a></p>
+</section>
+<script src="../js/validar.js"></script>
+</body>
+<footer>
+    <div class="contact-info">
+        <h2 class="texto">Contacto</h2>
+        <p class="texto"><strong>Teléfono:</strong> +57 3188901261</p>
+        <p class="texto"><strong>Email:</strong> pulgaashelby@gmail.com</p>
+        <p class="texto"><strong>Ciudad:</strong> Cali, Valle del cauca</p>
+    </div>
+</footer>
+</html>

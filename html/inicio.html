@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appsofia</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<header>
+    <header class="header">
+        <h1 class="appsofia" type="button" onclick="window.location.href='../index.html';">APPSOFIA</h1>
+        <h2 class="acercade" type="button" onclick="window.location.href='../html/acercade.html';">Acerca de</h2>
+        <div class="logo" align="center"><img src="../img/icon.png" width="50" height="50" type="button" onclick="window.location.href='../index.html';">
+    </header>
+</header>
+<body>
+    <section class= 'formulario'>
+        <div align="center"><img src="../img/txtlogo.png" width="290" height="270"> </div>
+        <div class="parametros">
+         <form method="post" onsubmit="return validarFormulario()">
+             <div class="username"> 
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label>Email</label>
+             </div>
+             <div class="username">
+                <input type="password" id="contraseña" name="contraseña" required minlength="6">
+                <label>contraseña</label>
+             </div>
+             <div class="recordar"><a href="../html/forgetpass.html">¿Olvidó su contraseña?</a></div>
+             <input class="botoniniciar" type="button" value="Iniciar" onclick="validarYRedireccionar()">
+             <div class="registrarse">
+                 Quiero hacer el <a href="../html/register.html">registro</a></div>
+          </form>
+        </div>
+    </section>
+    <script src="../js/validar.js"></script>
+</body>
+<footer>
+    <div class="contact-info">
+        <h2 class="texto">Contacto</h2>
+        <p class="texto"><strong>Teléfono:</strong> +57 3188901261</p>
+        <p class="texto"><strong>Email:</strong> pulgaashelby@gmail.com</p>
+        <p class="texto"><strong>Ciudad:</strong> Cali, Valle del cauca</p>
+    </div>
+</footer>
+</html>
